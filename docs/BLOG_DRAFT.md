@@ -102,6 +102,10 @@ Windows 的问题特别有代表性。代码中有一个看似合理的兼容性
 
 本机最终后端共有 54 项测试，53 项通过、1 项因创建真实符号链接的系统权限限制跳过，0 项失败、0 项错误。16 项浏览器验收通过，覆盖实际媒体播放与进度跳转，以及延迟加载、部分统计和错误恢复。跳过项没有计入通过数，Windows 目录联接与符号链接分支替身的验证分别记录。
 
-源码、独立测试、评审报告、经路径脱敏的成功与失败输出、四张截图和团队开发日志一同交付。仓库为 [cs3331-media-browser](https://github.com/ppknkn/cs3331-media-browser)，以 CS3331 软件工程作业标注。GitHub 自动验证配置涵盖 Ubuntu/Windows 与 Python 3.10/3.12；配置存在与实际远程运行成功是两件事，执行结果以仓库 Actions 和交付报告为准。
+远端结果补充了本机限制：两组 Windows 后端均 54/54 通过，两组 Ubuntu 均 53 通过、1 个 Windows 专属目录联接测试跳过；四组真实符号链接越界和循环均成功。TestEngineer 阅读实际日志后才把这项写入结论。本机跳过仍保留原记录，远端验证作为另外一层证据。
+
+源码、独立测试、评审报告、经路径脱敏的成功与失败输出、四张截图和团队开发日志一同交付。仓库为 [cs3331-media-browser](https://github.com/ppknkn/cs3331-media-browser)，以 CS3331 软件工程作业标注。2026-10-10 的 [GitHub Actions 实际运行](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416) 已完成，Ubuntu/Windows 与 Python 3.10/3.12 四组后端测试和 JavaScript 语法检查全部成功；完整网页交互和视频验收在本机 Edge 完成，两种验证范围分别记录。
+
+上传还有一个环境问题：现有 HTTPS 登录没有提交工作流需要的权限。主控验证本机已经配置的 SSH 身份属于同一 GitHub 账户，使用该身份完成推送。这里无需让用户重新登录，也没有为绕过问题删除自动测试配置。
 
 这次没有把替身测试写成真人操作系统对话框，也没有把一种 H.264 视频播放成功写成所有视频编码都兼容。截图均为人工生成的演示素材，公开仓库没有用户媒体或原有课程程序的个人数据。详细复现步骤与范围可查阅仓库中的 [测试报告](https://github.com/ppknkn/cs3331-media-browser/blob/main/docs/TEST_REPORT.md)和[开发日志](https://github.com/ppknkn/cs3331-media-browser/blob/main/docs/DEVELOPMENT_LOG.md)。

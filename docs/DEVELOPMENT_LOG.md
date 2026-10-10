@@ -88,3 +88,13 @@ TestEngineer 交付最终后端 54 项：53 通过、1 真实符号链接权限�
 截图同样需要检查。主控将隐藏完整本机路径的任务交回 TestEngineer；第一次使用截图临时样式，触发应用 CSP 拒绝，15 项通过、最终控制台检查 1 项失败。测试者没有放宽 CSP 或忽略报错，而是改为截图前设置路径元素的原生 `hidden` 属性、截图后在 finally 中恢复。2026-10-10 20:33:45—20:33:48 完整浏览器重跑 16/16 通过，无 JavaScript 异常或非预期控制台错误；四张截图逐一打开复核。应用源码 SHA256 与此前通过的快照一致。
 
 主控为此只在本项目配置 GitHub noreply 提交邮箱，并重建尚未发布的首次提交，避免旧提交历史仍包含脱敏前日志或私人邮箱。公开树与提交内容完成复核后再推送；此过程不向其他联系人发送消息。远端和 CI 的最终核验见 `FINAL_REPORT.md`。
+
+### 远端上传与实际 CI 核验
+
+GitHub HTTPS 登录可以创建仓库，但缺少 `workflow` scope，无法推送含 `.github/workflows/tests.yml` 的提交。主控检查本机已有的 SSH 提交身份，握手确认同一 `ppknkn` 账户，然后使用该现有身份完成上传；未添加新权限，也未要求用户重新登录。
+
+发布根提交为 `9da90311ebb33e1464c4e8f0fd22f585a2d0ef77`，共 41 个公开文件。API 核验父提交为空、提交者为 noreply 邮箱；远端 main SHA 与本机一致。仓库为 PUBLIC，描述和主题包含课程与软件工程作业标注。
+
+[GitHub Actions run 38052873416](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416) 在北京时间 20:41:20—20:41:48 完成，Ubuntu/Windows × Python 3.10/3.12 四组作业全部成功。每组实际执行后端 unittest 与两个 JavaScript 文件语法检查，机器可读原始结果保存在 `test-results/github-ci-38052873416.json`。最终文档据实补齐远端结果，源码不因文档更新重复修改或测试。
+
+TestEngineer 进一步独立读取 job 完整日志：Windows 两组各 54 通过、0 跳过；Ubuntu 两组各 53 通过、1 个 Windows 专属 junction 用例跳过。四组真实符号链接越界和循环均通过，两组 Windows junction 均通过，补齐本机 WinError 1314 限制场景；本机记录保持原结果。该 CI 只执行后端与 JavaScript 语法，不把它写成远端运行了 16 项浏览器验收。

@@ -152,6 +152,17 @@ TestEngineer 的最终正式运行未发现新的应用缺陷。修复和回归�
 
 ## 持续集成与结论边界
 
-已编写 [GitHub Actions 工作流](../.github/workflows/tests.yml)，准备在 Ubuntu/Windows 与 Python 3.10/3.12 的四组环境运行后端 unittest 和 JavaScript 语法检查。它使用 GitHub 提供的明确 Python 环境，不使用本机 MSYS Python。**本报告写入时远程 CI 尚未运行**，不能把预设矩阵当成已经验证的跨平台结果；上传后由实际 Actions 状态确认。
+[GitHub Actions 工作流](../.github/workflows/tests.yml) 已实际运行：[run 38052873416](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416)，对应发布提交 `9da90311ebb33e1464c4e8f0fd22f585a2d0ef77`。北京时间 2026-10-10 20:41:20 创建，20:41:48 完成，整体 `completed/success`。TestEngineer 独立读取四组实际 job 日志；下表数字来自日志中的 `Ran 54 tests`、`OK` 与 `skipped`，不是根据配置推算。
 
-当前可执行的本机测试全部通过。仍未覆盖：真人操作系统选择器、真实 symlink 权限场景、其他浏览器/操作系统完整体验、所有容器/编码组合、超大真实媒体库的性能压力。代码声明格式识别不代表浏览器可解码，本轮只实际播放人工 H.264 MP4。测试采用小预算验证扫描边界，不能替代十万文件级性能测量。
+| 实际环境与日志 | 总用例 | 通过 | 跳过 | unittest 耗时 | 结果 |
+| --- | ---: | ---: | ---: | ---: | --- |
+| [Ubuntu / Python 3.10.22](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416/job/114215399756) | 54 | 53 | 1 | 0.446 秒 | 成功 |
+| [Ubuntu / Python 3.12.15](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416/job/114215399766) | 54 | 53 | 1 | 0.598 秒 | 成功 |
+| [Windows / Python 3.10.11](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416/job/114215399786) | 54 | 54 | 0 | 1.292 秒 | 成功 |
+| [Windows / Python 3.12.10](https://github.com/ppknkn/cs3331-media-browser/actions/runs/38052873416/job/114215399660) | 54 | 54 | 0 | 1.419 秒 | 成功 |
+
+共 216 次顶层用例执行，214 通过、2 个平台性跳过、0 失败、0 错误。Ubuntu 仅跳过 Windows 专属的真实 junction 用例；四组真实符号链接越界与循环测试全部通过，两组 Windows 真实 junction 也通过。GitHub hosted Windows 具备本机没有的符号链接创建权限，补齐该场景的实际验证；本机原来的权限跳过记录不改写。四组 `node --check static/app.js` 与 `node --check tests/browser_smoke.cjs` 均通过，CI 没有运行完整浏览器验收。它使用 GitHub 提供的明确 Python 环境，不使用本机 MSYS Python。
+
+[GitHub API 机器可读记录](test-results/github-ci-38052873416.json) 保存正式 run/job/step 状态、时间和对应提交，具体用例输出可从上表 job 日志核验。最终报告更新只涉及文档与该记录，源码和测试逻辑与通过 CI 的提交相同。
+
+当前可执行的本机测试全部通过，真实符号链接场景另由上述远端环境验证。仍未覆盖：真人操作系统选择器、其他浏览器/操作系统完整网页体验、所有容器/编码组合、超大真实媒体库的性能压力。代码声明格式识别不代表浏览器可解码，本轮只实际播放人工 H.264 MP4。测试采用小预算验证扫描边界，不能替代十万文件级性能测量。
