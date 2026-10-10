@@ -1,0 +1,113 @@
+{
+  "started_utc": "2026-10-10T12:32:58.032Z",
+  "finished_utc": "2026-10-10T12:33:01.356Z",
+  "node": "v24.19.0",
+  "platform": "win32",
+  "browser_channel": "msedge",
+  "scope": "headless browser; real local HTTP and artificial demo media; manual path entry; picker not physically operated",
+  "total_checks": 16,
+  "passed": 15,
+  "failed": 1,
+  "records": [
+    {
+      "name": "welcome and real manual absolute-path open",
+      "status": "passed",
+      "seconds": 0.4523
+    },
+    {
+      "name": "Unicode and HTML-like filename renders as text",
+      "status": "passed",
+      "seconds": 0.026
+    },
+    {
+      "name": "search, no results and clear filters",
+      "status": "passed",
+      "seconds": 0.0377
+    },
+    {
+      "name": "sort by oldest, newest and name",
+      "status": "passed",
+      "seconds": 0.0152
+    },
+    {
+      "name": "list view, grid view, theme and persistence",
+      "status": "passed",
+      "seconds": 0.1354
+    },
+    {
+      "name": "desktop layout and gallery screenshot",
+      "status": "passed",
+      "seconds": 0.1223
+    },
+    {
+      "name": "image next, previous, zoom, Escape and focus restoration",
+      "status": "passed",
+      "seconds": 0.3167
+    },
+    {
+      "name": "nested albums and breadcrumb navigation",
+      "status": "passed",
+      "seconds": 0.1485
+    },
+    {
+      "name": "image and video filters",
+      "status": "passed",
+      "seconds": 0.0231
+    },
+    {
+      "name": "video measurements",
+      "status": "measurement",
+      "duration": 4,
+      "currentTime": 2.5,
+      "readyState": 4
+    },
+    {
+      "name": "real H.264 playback advances and seeks",
+      "status": "passed",
+      "seconds": 0.4994
+    },
+    {
+      "name": "loading race: toolbar never resurrects previous library",
+      "status": "passed",
+      "seconds": 0.1952
+    },
+    {
+      "name": "partial album stays reachable under image/video filters",
+      "status": "passed",
+      "seconds": 0.1727
+    },
+    {
+      "name": "empty root and invalid manual path errors",
+      "status": "passed",
+      "seconds": 0.2039
+    },
+    {
+      "name": "deleted album gives 404 recovery state",
+      "status": "passed",
+      "seconds": 0.1558
+    },
+    {
+      "name": "390x844 mobile layout and viewer without horizontal overflow",
+      "status": "passed",
+      "seconds": 0.0754
+    },
+    {
+      "name": "no JavaScript exceptions or unexpected console errors",
+      "status": "failed",
+      "seconds": 0.0012,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   \"Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.\",\n+   \"Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.\",\n+   \"Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.\",\n+   \"Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.\"\n+ ]\n- []\n\n    at ${PROJECT_ROOT}\\tests\\browser_smoke.cjs:314:14\n    at check (${PROJECT_ROOT}\\tests\\browser_smoke.cjs:44:11)\n    at main (${PROJECT_ROOT}\\tests\\browser_smoke.cjs:312:11)"
+    }
+  ],
+  "page_errors": [],
+  "unexpected_console_errors": [
+    "Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.",
+    "Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.",
+    "Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.",
+    "Applying inline style violates the following Content Security Policy directive 'style-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-KH52ung5d0UVN1aOZjiX6MRvDwR9aW0Rtmt6FpCIG10='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked."
+  ],
+  "expected_console_errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "server_output": "拾光已启动：http://127.0.0.1:54651\r\n仅在本机读取媒体；按 Ctrl+C 退出。\r\n"
+}

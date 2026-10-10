@@ -1,0 +1,17 @@
+PASSED welcome and real manual absolute-path open
+PASSED Unicode and HTML-like filename renders as text
+PASSED search, no results and clear filters
+PASSED sort by oldest, newest and name
+PASSED list view, grid view, theme and persistence
+PASSED desktop layout and gallery screenshot
+PASSED image next, previous, zoom, Escape and focus restoration
+PASSED nested albums and breadcrumb navigation
+PASSED image and video filters
+MEASUREMENT video measurements
+PASSED real H.264 playback advances and seeks
+PASSED loading race: toolbar never resurrects previous library
+PASSED partial album stays reachable under image/video filters
+PASSED empty root and invalid manual path errors
+PASSED deleted album gives 404 recovery state
+PASSED 390x844 mobile layout and viewer without horizontal overflow
+PASSED no JavaScript exceptions or unexpected console errors

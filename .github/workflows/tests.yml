@@ -1,0 +1,42 @@
+name: CS3331 软件工程作业测试
+
+on:
+  push:
+    paths:
+      - 'app.py'
+      - 'static/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/**'
+  pull_request:
+    paths:
+      - 'app.py'
+      - 'static/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backend-and-syntax:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Standard-library backend unit and real loopback HTTP tests
+        run: python -m unittest discover -s tests -v
+      - name: Frontend and browser-test JavaScript syntax
+        run: |
+          node --check static/app.js
+          node --check tests/browser_smoke.cjs

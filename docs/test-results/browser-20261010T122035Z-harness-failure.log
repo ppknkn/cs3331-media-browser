@@ -1,0 +1,23 @@
+Retained from the first headless Edge execution on 2026-10-10 20:20 Asia/Shanghai.
+Source: TestEngineer manually archived the captured terminal output below because
+the first script version crashed before writing its automatic JSON/log files.
+This is a test harness defect, not an application failure.
+PASS welcome and real manual absolute-path open
+PASS Unicode and HTML-like filename renders as text
+PASS search, no results and clear filters
+PASS sort by oldest, newest and name
+PASS list view, grid view, theme and persistence
+PASS desktop layout and gallery screenshot
+PASS image next, previous, zoom, Escape and focus restoration
+PASS nested albums and breadcrumb navigation
+PASS image and video filters
+PASS real H.264 playback advances and seeks
+Unhandled callback error: route.continue: Route is already handled!
+Original stack: at handler (${PROJECT_ROOT}\tests\browser_smoke.cjs:219:86)
+Original error fields: { log: [], name: 'Error' }
+Node.js v24.19.0
+Cause: delayed route was removed immediately after resolving its gate,
+before route.continue completed. Playwright had already handled the route.
+Repair: retain routeTask, await it after releasing gate, and only then unroute.
+Added last-resort asynchronous error evidence retention.
+Full rerun required; this first execution is not counted as a successful acceptance run.

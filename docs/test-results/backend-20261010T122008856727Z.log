@@ -1,0 +1,58 @@
+test_body_content_type_transfer_encoding_and_size (test_backend.HttpTests) ... ok
+test_bootstrap_and_static_security_headers (test_backend.HttpTests) ... ok
+test_empty_media_get_head_and_range (test_backend.HttpTests) ... ok
+test_head_ignores_satisfiable_and_invalid_range_regression (test_backend.HttpTests) ... ok
+test_head_static_and_api_have_no_body (test_backend.HttpTests) ... ok
+test_invalid_hosts_are_rejected (test_backend.HttpTests) ... ok
+test_json_body_invalid_shapes_and_bytes (test_backend.HttpTests) ... ok
+test_library_nested_and_missing_and_file_path (test_backend.HttpTests) ... ok
+test_library_scan_switch_midscan_rejects_stale_result (test_backend.HttpTests) ... ok
+test_localhost_host_with_correct_port_is_allowed (test_backend.HttpTests) ... ok
+test_media_and_library_reject_encoded_traversal_drives_and_backslash (test_backend.HttpTests) ... ok
+test_media_full_get_unicode_url_and_mime (test_backend.HttpTests) ... ok
+test_media_missing_nonmedia_and_directory_not_exposed (test_backend.HttpTests) ... ok
+test_media_multirange_and_unknown_unit_return_full_200_regression (test_backend.HttpTests) ... ok
+test_media_ranges_single_open_suffix_clamp (test_backend.HttpTests) ... ok
+test_media_unsatisfiable_range_includes_total (test_backend.HttpTests) ... ok
+test_missing_wrong_and_unicode_token_fail_without_500_regression (test_backend.HttpTests) ... ok
+test_origin_cross_site_rejected_and_same_origin_allowed (test_backend.HttpTests) ... ok
+test_picker_busy_concurrent_request_and_stale_completion_release (test_backend.HttpTests) ... ok
+test_picker_failure_releases_busy (test_backend.HttpTests) ... ok
+test_picker_selected_and_cancelled_release_busy (test_backend.HttpTests) ... ok
+test_post_stale_session_does_not_mutate_root (test_backend.HttpTests) ... ok
+test_reads_do_not_modify_source_bytes_or_mtime (test_backend.HttpTests) ... ok
+test_root_invalid_or_absent_rejected_and_old_root_retained (test_backend.HttpTests) ... ok
+test_root_switch_old_library_and_media_are_stale (test_backend.HttpTests) ... ok
+test_static_allowlist_does_not_expose_source_or_traversal (test_backend.HttpTests) ... ok
+test_unknown_mutation_and_unsupported_methods (test_backend.HttpTests) ... ok
+test_current_level_independent_cap_reads_only_cap_plus_one (test_backend.PathAndScanTests) ... ok
+test_empty_directory_is_successful_empty_library (test_backend.PathAndScanTests) ... ok
+test_invalid_path_types_and_length (test_backend.PathAndScanTests) ... ok
+test_recursive_album_counts_prefers_image_cover_and_keeps_empty_album (test_backend.PathAndScanTests) ... ok
+test_relative_paths_accept_nested_unicode_and_spaces (test_backend.PathAndScanTests) ... ok
+test_relative_paths_reject_traversal_native_drives_and_nul (test_backend.PathAndScanTests) ... ok
+test_resolve_existing_nested_and_missing (test_backend.PathAndScanTests) ... ok
+test_scan_budget_never_hides_current_level_regression (test_backend.PathAndScanTests) ... ok
+test_scan_preserves_special_unicode_html_like_filename (test_backend.PathAndScanTests) ... ok
+test_scan_recognizes_all_declared_extensions_case_insensitively (test_backend.PathAndScanTests) ... ok
+test_scandir_consumption_is_bounded_before_recursive_sort (test_backend.PathAndScanTests) ... ok
+test_symlink_outside_and_cycle_are_skipped (test_backend.PathAndScanTests) ... skipped "OS does not permit creating symlinks: [WinError 1314] 客户端没有所需的特权。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Temp\\\\frame-test-wzgfgwcd\\\\outside' -> '${USERPROFILE}\\\\AppData\\\\Local\\\\Temp\\\\frame-test-wzgfgwcd\\\\library\\\\escape'"
+test_validate_root_accepts_absolute_readable_directory (test_backend.PathAndScanTests) ... ok
+test_validate_root_permission_error_mapping (test_backend.PathAndScanTests) ... ok
+test_validate_root_rejects_invalid_types_relative_unc_and_file (test_backend.PathAndScanTests) ... ok
+test_windows_junction_outside_and_cycle_skipped_on_python310 (test_backend.PathAndScanTests) ... ok
+test_picker_rejects_failed_or_invalid_subprocess_output (test_backend.PickerUnitTests) ... ok
+test_picker_selected_and_cancelled_with_subprocess_stub (test_backend.PickerUnitTests) ... ok
+test_picker_timeout_and_unavailable (test_backend.PickerUnitTests) ... ok
+test_empty_media_full_response_and_range (test_backend.StateAndRangeTests) ... ok
+test_multirange_and_unknown_unit_are_ignored_regression (test_backend.StateAndRangeTests) ... ok
+test_no_root_and_stale_session (test_backend.StateAndRangeTests) ... ok
+test_range_full_single_open_suffix_and_clamp (test_backend.StateAndRangeTests) ... ok
+test_range_invalid_and_unsatisfiable (test_backend.StateAndRangeTests) ... ok
+test_replace_rotates_session_retains_token (test_backend.StateAndRangeTests) ... ok
+test_server_rejects_nonloopback_bind_before_socket_creation (test_backend.StateAndRangeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 53 tests in 1.266s
+
+OK (skipped=1)

@@ -1,0 +1,341 @@
+{
+  "started_utc": "2026-10-10T12:22:35.582205+00:00",
+  "finished_utc": "2026-10-10T12:22:36.886677+00:00",
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "${PYTHON_ENV}\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "command": "python tests/run_tests.py",
+  "scope": "backend unit and real HTTP loopback integration; native picker is stubbed",
+  "tests_run": 54,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "duration_seconds": 1.275454,
+  "success": true,
+  "cases": [
+    {
+      "id": "test_backend.HttpTests.test_body_content_type_transfer_encoding_and_size",
+      "status": "passed",
+      "seconds": 0.064459,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_bootstrap_and_static_security_headers",
+      "status": "passed",
+      "seconds": 0.106086,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_empty_media_get_head_and_range",
+      "status": "passed",
+      "seconds": 0.031044,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_head_ignores_satisfiable_and_invalid_range_regression",
+      "status": "passed",
+      "seconds": 0.030695,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_head_static_and_api_have_no_body",
+      "status": "passed",
+      "seconds": 0.045154,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_invalid_hosts_are_rejected",
+      "status": "passed",
+      "seconds": 0.045759,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_json_body_invalid_shapes_and_bytes",
+      "status": "passed",
+      "seconds": 0.030841,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_library_nested_and_missing_and_file_path",
+      "status": "passed",
+      "seconds": 0.032207,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_library_scan_switch_midscan_rejects_stale_result",
+      "status": "passed",
+      "seconds": 0.030777,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_localhost_host_with_correct_port_is_allowed",
+      "status": "passed",
+      "seconds": 0.030437,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_and_library_reject_encoded_traversal_drives_and_backslash",
+      "status": "passed",
+      "seconds": 0.030518,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_full_get_unicode_url_and_mime",
+      "status": "passed",
+      "seconds": 0.046301,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_missing_nonmedia_and_directory_not_exposed",
+      "status": "passed",
+      "seconds": 0.061071,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_multirange_and_unknown_unit_return_full_200_regression",
+      "status": "passed",
+      "seconds": 0.031409,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_ranges_single_open_suffix_clamp",
+      "status": "passed",
+      "seconds": 0.045231,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_unsatisfiable_range_includes_total",
+      "status": "passed",
+      "seconds": 0.046107,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_missing_wrong_and_unicode_token_fail_without_500_regression",
+      "status": "passed",
+      "seconds": 0.029534,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_origin_cross_site_rejected_and_same_origin_allowed",
+      "status": "passed",
+      "seconds": 0.030028,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_busy_concurrent_request_and_stale_completion_release",
+      "status": "passed",
+      "seconds": 0.061744,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_failure_releases_busy",
+      "status": "passed",
+      "seconds": 0.029815,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_selected_and_cancelled_release_busy",
+      "status": "passed",
+      "seconds": 0.030485,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_post_stale_session_does_not_mutate_root",
+      "status": "passed",
+      "seconds": 0.016024,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_reads_do_not_modify_source_bytes_or_mtime",
+      "status": "passed",
+      "seconds": 0.030179,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_root_invalid_or_absent_rejected_and_old_root_retained",
+      "status": "passed",
+      "seconds": 0.045102,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_root_switch_old_library_and_media_are_stale",
+      "status": "passed",
+      "seconds": 0.030464,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_static_allowlist_does_not_expose_source_or_traversal",
+      "status": "passed",
+      "seconds": 0.030575,
+      "details": null
+    },
+    {
+      "id": "test_backend.HttpTests.test_unknown_mutation_and_unsupported_methods",
+      "status": "passed",
+      "seconds": 0.030119,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_current_level_independent_cap_reads_only_cap_plus_one",
+      "status": "passed",
+      "seconds": 0.01001,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_empty_directory_is_successful_empty_library",
+      "status": "passed",
+      "seconds": 0.001303,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_invalid_path_types_and_length",
+      "status": "passed",
+      "seconds": 0.00133,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_recursive_album_counts_prefers_image_cover_and_keeps_empty_album",
+      "status": "passed",
+      "seconds": 0.005401,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_relative_paths_accept_nested_unicode_and_spaces",
+      "status": "passed",
+      "seconds": 0.001186,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_relative_paths_reject_traversal_native_drives_and_nul",
+      "status": "passed",
+      "seconds": 0.001335,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_resolve_existing_nested_and_missing",
+      "status": "passed",
+      "seconds": 0.002161,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_budget_never_hides_current_level_regression",
+      "status": "passed",
+      "seconds": 0.006619,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_preserves_special_unicode_html_like_filename",
+      "status": "passed",
+      "seconds": 0.002084,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_recognizes_all_declared_extensions_case_insensitively",
+      "status": "passed",
+      "seconds": 0.009322,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_skips_symlink_flagged_entry_with_deterministic_stub",
+      "status": "passed",
+      "seconds": 0.002052,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scandir_consumption_is_bounded_before_recursive_sort",
+      "status": "passed",
+      "seconds": 0.00897,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_symlink_outside_and_cycle_are_skipped",
+      "status": "skipped",
+      "seconds": 0.001607,
+      "details": "OS does not permit creating symlinks: [WinError 1314] 客户端没有所需的特权。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Temp\\\\frame-test-4jjwfg5v\\\\outside' -> '${USERPROFILE}\\\\AppData\\\\Local\\\\Temp\\\\frame-test-4jjwfg5v\\\\library\\\\escape'"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_accepts_absolute_readable_directory",
+      "status": "passed",
+      "seconds": 0.001344,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_permission_error_mapping",
+      "status": "passed",
+      "seconds": 0.002158,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_rejects_invalid_types_relative_unc_and_file",
+      "status": "passed",
+      "seconds": 0.001967,
+      "details": null
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_windows_junction_outside_and_cycle_skipped_on_python310",
+      "status": "passed",
+      "seconds": 0.079227,
+      "details": null
+    },
+    {
+      "id": "test_backend.PickerUnitTests.test_picker_rejects_failed_or_invalid_subprocess_output",
+      "status": "passed",
+      "seconds": 0.000886,
+      "details": null
+    },
+    {
+      "id": "test_backend.PickerUnitTests.test_picker_selected_and_cancelled_with_subprocess_stub",
+      "status": "passed",
+      "seconds": 0.000332,
+      "details": null
+    },
+    {
+      "id": "test_backend.PickerUnitTests.test_picker_timeout_and_unavailable",
+      "status": "passed",
+      "seconds": 0.000355,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_empty_media_full_response_and_range",
+      "status": "passed",
+      "seconds": 0.001321,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_multirange_and_unknown_unit_are_ignored_regression",
+      "status": "passed",
+      "seconds": 0.001356,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_no_root_and_stale_session",
+      "status": "passed",
+      "seconds": 0.00122,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_range_full_single_open_suffix_and_clamp",
+      "status": "passed",
+      "seconds": 0.001499,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_range_invalid_and_unsatisfiable",
+      "status": "passed",
+      "seconds": 0.001531,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_replace_rotates_session_retains_token",
+      "status": "passed",
+      "seconds": 0.001521,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_server_rejects_nonloopback_bind_before_socket_creation",
+      "status": "passed",
+      "seconds": 0.001275,
+      "details": null
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "started_utc": "2026-10-10T12:22:10.146Z",
+  "finished_utc": "2026-10-10T12:22:13.812Z",
+  "node": "v24.19.0",
+  "platform": "win32",
+  "browser_channel": "msedge",
+  "scope": "headless browser; real local HTTP and artificial demo media; manual path entry; picker not physically operated",
+  "total_checks": 16,
+  "passed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "name": "welcome and real manual absolute-path open",
+      "status": "passed",
+      "seconds": 473.2058
+    },
+    {
+      "name": "Unicode and HTML-like filename renders as text",
+      "status": "passed",
+      "seconds": 23.9272
+    },
+    {
+      "name": "search, no results and clear filters",
+      "status": "passed",
+      "seconds": 52.601
+    },
+    {
+      "name": "sort by oldest, newest and name",
+      "status": "passed",
+      "seconds": 20.7245
+    },
+    {
+      "name": "list view, grid view, theme and persistence",
+      "status": "passed",
+      "seconds": 135.913
+    },
+    {
+      "name": "desktop layout and gallery screenshot",
+      "status": "passed",
+      "seconds": 148.3166
+    },
+    {
+      "name": "image next, previous, zoom, Escape and focus restoration",
+      "status": "passed",
+      "seconds": 366.5414
+    },
+    {
+      "name": "nested albums and breadcrumb navigation",
+      "status": "passed",
+      "seconds": 138.983
+    },
+    {
+      "name": "image and video filters",
+      "status": "passed",
+      "seconds": 33.6581
+    },
+    {
+      "name": "video measurements",
+      "status": "measurement",
+      "duration": 4,
+      "currentTime": 2.5,
+      "readyState": 4
+    },
+    {
+      "name": "real H.264 playback advances and seeks",
+      "status": "passed",
+      "seconds": 610.1005
+    },
+    {
+      "name": "loading race: toolbar never resurrects previous library",
+      "status": "passed",
+      "seconds": 206.0712
+    },
+    {
+      "name": "partial album stays reachable under image/video filters",
+      "status": "passed",
+      "seconds": 225.983
+    },
+    {
+      "name": "empty root and invalid manual path errors",
+      "status": "passed",
+      "seconds": 232.5578
+    },
+    {
+      "name": "deleted album gives 404 recovery state",
+      "status": "passed",
+      "seconds": 157.3151
+    },
+    {
+      "name": "390x844 mobile layout and viewer without horizontal overflow",
+      "status": "passed",
+      "seconds": 78.206
+    },
+    {
+      "name": "no JavaScript exceptions or unexpected console errors",
+      "status": "passed",
+      "seconds": 0.5162
+    }
+  ],
+  "page_errors": [],
+  "unexpected_console_errors": [],
+  "expected_console_errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "server_output": "拾光已启动：http://127.0.0.1:63099\r\n仅在本机读取媒体；按 Ctrl+C 退出。\r\n"
+}

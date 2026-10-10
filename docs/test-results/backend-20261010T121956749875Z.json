@@ -1,0 +1,635 @@
+{
+  "started_utc": "2026-10-10T12:19:56.749875+00:00",
+  "finished_utc": "2026-10-10T12:19:57.019682+00:00",
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "${PYTHON_ENV}\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "command": "python tests/run_tests.py",
+  "scope": "backend unit and real HTTP loopback integration; native picker is stubbed",
+  "tests_run": 53,
+  "failures": 0,
+  "errors": 100,
+  "skipped": 0,
+  "duration_seconds": 0.185704,
+  "success": false,
+  "cases": [
+    {
+      "id": "test_backend.HttpTests.test_body_content_type_transfer_encoding_and_size",
+      "status": "error",
+      "seconds": 0.004994,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-y4smwcqr\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_body_content_type_transfer_encoding_and_size",
+      "status": "error",
+      "seconds": 0.007845,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-y4smwcqr'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-y4smwcqr'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_bootstrap_and_static_security_headers",
+      "status": "error",
+      "seconds": 0.002689,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-henxcmhm\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_bootstrap_and_static_security_headers",
+      "status": "error",
+      "seconds": 0.003149,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-henxcmhm'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-henxcmhm'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_empty_media_get_head_and_range",
+      "status": "error",
+      "seconds": 0.00246,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-4i7zaqer\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_empty_media_get_head_and_range",
+      "status": "error",
+      "seconds": 0.002943,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-4i7zaqer'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-4i7zaqer'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_head_ignores_satisfiable_and_invalid_range_regression",
+      "status": "error",
+      "seconds": 0.002658,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-meotj25a\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_head_ignores_satisfiable_and_invalid_range_regression",
+      "status": "error",
+      "seconds": 0.003108,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-meotj25a'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-meotj25a'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_head_static_and_api_have_no_body",
+      "status": "error",
+      "seconds": 0.00226,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-5lcuyo5y\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_head_static_and_api_have_no_body",
+      "status": "error",
+      "seconds": 0.002672,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-5lcuyo5y'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-5lcuyo5y'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_invalid_hosts_are_rejected",
+      "status": "error",
+      "seconds": 0.002203,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-emawaw8k\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_invalid_hosts_are_rejected",
+      "status": "error",
+      "seconds": 0.002748,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-emawaw8k'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-emawaw8k'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_json_body_invalid_shapes_and_bytes",
+      "status": "error",
+      "seconds": 0.002711,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zwvl67w8\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_json_body_invalid_shapes_and_bytes",
+      "status": "error",
+      "seconds": 0.003171,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zwvl67w8'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zwvl67w8'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_library_nested_and_missing_and_file_path",
+      "status": "error",
+      "seconds": 0.002717,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-5becbx8p\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_library_nested_and_missing_and_file_path",
+      "status": "error",
+      "seconds": 0.00309,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-5becbx8p'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-5becbx8p'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_library_scan_switch_midscan_rejects_stale_result",
+      "status": "error",
+      "seconds": 0.002278,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-kjgtiww5\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_library_scan_switch_midscan_rejects_stale_result",
+      "status": "error",
+      "seconds": 0.002703,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-kjgtiww5'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-kjgtiww5'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_localhost_host_with_correct_port_is_allowed",
+      "status": "error",
+      "seconds": 0.002195,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0gbfb8l_\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_localhost_host_with_correct_port_is_allowed",
+      "status": "error",
+      "seconds": 0.002689,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0gbfb8l_'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0gbfb8l_'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_and_library_reject_encoded_traversal_drives_and_backslash",
+      "status": "error",
+      "seconds": 0.002309,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-obvcv9d7\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_and_library_reject_encoded_traversal_drives_and_backslash",
+      "status": "error",
+      "seconds": 0.00272,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-obvcv9d7'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-obvcv9d7'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_full_get_unicode_url_and_mime",
+      "status": "error",
+      "seconds": 0.002728,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-exw6vkw7\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_full_get_unicode_url_and_mime",
+      "status": "error",
+      "seconds": 0.003156,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-exw6vkw7'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-exw6vkw7'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_missing_nonmedia_and_directory_not_exposed",
+      "status": "error",
+      "seconds": 0.002457,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-2f403hc5\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_missing_nonmedia_and_directory_not_exposed",
+      "status": "error",
+      "seconds": 0.002892,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-2f403hc5'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-2f403hc5'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_multirange_and_unknown_unit_return_full_200_regression",
+      "status": "error",
+      "seconds": 0.002468,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-hs6_mf8a\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_multirange_and_unknown_unit_return_full_200_regression",
+      "status": "error",
+      "seconds": 0.002932,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-hs6_mf8a'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-hs6_mf8a'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_ranges_single_open_suffix_clamp",
+      "status": "error",
+      "seconds": 0.002181,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-c6qmyjv0\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_ranges_single_open_suffix_clamp",
+      "status": "error",
+      "seconds": 0.00256,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-c6qmyjv0'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-c6qmyjv0'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_unsatisfiable_range_includes_total",
+      "status": "error",
+      "seconds": 0.002146,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-lg1c2rp8\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_media_unsatisfiable_range_includes_total",
+      "status": "error",
+      "seconds": 0.00252,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-lg1c2rp8'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-lg1c2rp8'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_missing_wrong_and_unicode_token_fail_without_500_regression",
+      "status": "error",
+      "seconds": 0.002335,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-ge8kwwie\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_missing_wrong_and_unicode_token_fail_without_500_regression",
+      "status": "error",
+      "seconds": 0.00274,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-ge8kwwie'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-ge8kwwie'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_origin_cross_site_rejected_and_same_origin_allowed",
+      "status": "error",
+      "seconds": 0.003552,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zj1hblxd\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_origin_cross_site_rejected_and_same_origin_allowed",
+      "status": "error",
+      "seconds": 0.003945,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zj1hblxd'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zj1hblxd'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_busy_concurrent_request_and_stale_completion_release",
+      "status": "error",
+      "seconds": 0.002291,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0tvyhoat\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_busy_concurrent_request_and_stale_completion_release",
+      "status": "error",
+      "seconds": 0.002698,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0tvyhoat'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0tvyhoat'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_failure_releases_busy",
+      "status": "error",
+      "seconds": 0.002413,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-r6muzn_s\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_failure_releases_busy",
+      "status": "error",
+      "seconds": 0.002845,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-r6muzn_s'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-r6muzn_s'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_selected_and_cancelled_release_busy",
+      "status": "error",
+      "seconds": 0.00234,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zfi740ha\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_picker_selected_and_cancelled_release_busy",
+      "status": "error",
+      "seconds": 0.002778,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zfi740ha'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-zfi740ha'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_post_stale_session_does_not_mutate_root",
+      "status": "error",
+      "seconds": 0.002455,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-967swwrn\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_post_stale_session_does_not_mutate_root",
+      "status": "error",
+      "seconds": 0.003013,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-967swwrn'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-967swwrn'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_reads_do_not_modify_source_bytes_or_mtime",
+      "status": "error",
+      "seconds": 0.0034,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-xxs3sy99\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_reads_do_not_modify_source_bytes_or_mtime",
+      "status": "error",
+      "seconds": 0.003943,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-xxs3sy99'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-xxs3sy99'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_root_invalid_or_absent_rejected_and_old_root_retained",
+      "status": "error",
+      "seconds": 0.002263,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-4qdqikgt\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_root_invalid_or_absent_rejected_and_old_root_retained",
+      "status": "error",
+      "seconds": 0.002628,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-4qdqikgt'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-4qdqikgt'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_root_switch_old_library_and_media_are_stale",
+      "status": "error",
+      "seconds": 0.002309,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-qpyst84r\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_root_switch_old_library_and_media_are_stale",
+      "status": "error",
+      "seconds": 0.002684,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-qpyst84r'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-qpyst84r'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_static_allowlist_does_not_expose_source_or_traversal",
+      "status": "error",
+      "seconds": 0.002298,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-_yi4nh3p\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_static_allowlist_does_not_expose_source_or_traversal",
+      "status": "error",
+      "seconds": 0.002675,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-_yi4nh3p'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-_yi4nh3p'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_unknown_mutation_and_unsupported_methods",
+      "status": "error",
+      "seconds": 0.00206,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 279, in setUp\n    super().setUp()\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-kuny3fis\\\\library'\n"
+    },
+    {
+      "id": "test_backend.HttpTests.test_unknown_mutation_and_unsupported_methods",
+      "status": "error",
+      "seconds": 0.002507,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-kuny3fis'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-kuny3fis'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_current_level_independent_cap_reads_only_cap_plus_one",
+      "status": "error",
+      "seconds": 0.002743,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-q7lr1m4e\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_current_level_independent_cap_reads_only_cap_plus_one",
+      "status": "error",
+      "seconds": 0.003217,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-q7lr1m4e'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-q7lr1m4e'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_empty_directory_is_successful_empty_library",
+      "status": "error",
+      "seconds": 0.00229,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-faf7qdha\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_empty_directory_is_successful_empty_library",
+      "status": "error",
+      "seconds": 0.00273,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-faf7qdha'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-faf7qdha'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_invalid_path_types_and_length",
+      "status": "error",
+      "seconds": 0.002176,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-d8vraj00\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_invalid_path_types_and_length",
+      "status": "error",
+      "seconds": 0.0026,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-d8vraj00'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-d8vraj00'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_recursive_album_counts_prefers_image_cover_and_keeps_empty_album",
+      "status": "error",
+      "seconds": 0.002294,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-254xe45s\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_recursive_album_counts_prefers_image_cover_and_keeps_empty_album",
+      "status": "error",
+      "seconds": 0.002749,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-254xe45s'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-254xe45s'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_relative_paths_accept_nested_unicode_and_spaces",
+      "status": "error",
+      "seconds": 0.002573,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-ou68vt3q\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_relative_paths_accept_nested_unicode_and_spaces",
+      "status": "error",
+      "seconds": 0.002996,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-ou68vt3q'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-ou68vt3q'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_relative_paths_reject_traversal_native_drives_and_nul",
+      "status": "error",
+      "seconds": 0.002535,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-exr7q_xx\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_relative_paths_reject_traversal_native_drives_and_nul",
+      "status": "error",
+      "seconds": 0.002998,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-exr7q_xx'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-exr7q_xx'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_resolve_existing_nested_and_missing",
+      "status": "error",
+      "seconds": 0.002353,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-iaii78_d\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_resolve_existing_nested_and_missing",
+      "status": "error",
+      "seconds": 0.002771,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-iaii78_d'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-iaii78_d'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_budget_never_hides_current_level_regression",
+      "status": "error",
+      "seconds": 0.002289,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-l95jq6o2\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_budget_never_hides_current_level_regression",
+      "status": "error",
+      "seconds": 0.002705,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-l95jq6o2'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-l95jq6o2'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_preserves_special_unicode_html_like_filename",
+      "status": "error",
+      "seconds": 0.004241,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-32mprnfi\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_preserves_special_unicode_html_like_filename",
+      "status": "error",
+      "seconds": 0.004616,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-32mprnfi'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-32mprnfi'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_recognizes_all_declared_extensions_case_insensitively",
+      "status": "error",
+      "seconds": 0.002196,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-dn9gc4wr\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scan_recognizes_all_declared_extensions_case_insensitively",
+      "status": "error",
+      "seconds": 0.002563,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-dn9gc4wr'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-dn9gc4wr'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scandir_consumption_is_bounded_before_recursive_sort",
+      "status": "error",
+      "seconds": 0.002623,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-a4m5ekos\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_scandir_consumption_is_bounded_before_recursive_sort",
+      "status": "error",
+      "seconds": 0.003012,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-a4m5ekos'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-a4m5ekos'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_symlink_outside_and_cycle_are_skipped",
+      "status": "error",
+      "seconds": 0.002409,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-2w_gr594\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_symlink_outside_and_cycle_are_skipped",
+      "status": "error",
+      "seconds": 0.002847,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-2w_gr594'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-2w_gr594'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_accepts_absolute_readable_directory",
+      "status": "error",
+      "seconds": 0.002231,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-524f_ds5\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_accepts_absolute_readable_directory",
+      "status": "error",
+      "seconds": 0.00277,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-524f_ds5'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-524f_ds5'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_permission_error_mapping",
+      "status": "error",
+      "seconds": 0.002485,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-oj9lqz71\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_permission_error_mapping",
+      "status": "error",
+      "seconds": 0.002877,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-oj9lqz71'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-oj9lqz71'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_rejects_invalid_types_relative_unc_and_file",
+      "status": "error",
+      "seconds": 0.002189,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-z2u0l3c2\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_validate_root_rejects_invalid_types_relative_unc_and_file",
+      "status": "error",
+      "seconds": 0.002582,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-z2u0l3c2'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-z2u0l3c2'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_windows_junction_outside_and_cycle_skipped_on_python310",
+      "status": "error",
+      "seconds": 0.003235,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-me6d6dfr\\\\library'\n"
+    },
+    {
+      "id": "test_backend.PathAndScanTests.test_windows_junction_outside_and_cycle_skipped_on_python310",
+      "status": "error",
+      "seconds": 0.00369,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-me6d6dfr'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-me6d6dfr'\n"
+    },
+    {
+      "id": "test_backend.PickerUnitTests.test_picker_rejects_failed_or_invalid_subprocess_output",
+      "status": "passed",
+      "seconds": 0.000947,
+      "details": null
+    },
+    {
+      "id": "test_backend.PickerUnitTests.test_picker_selected_and_cancelled_with_subprocess_stub",
+      "status": "passed",
+      "seconds": 0.00034,
+      "details": null
+    },
+    {
+      "id": "test_backend.PickerUnitTests.test_picker_timeout_and_unavailable",
+      "status": "passed",
+      "seconds": 0.000386,
+      "details": null
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_empty_media_full_response_and_range",
+      "status": "error",
+      "seconds": 0.003054,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-7l7mrrst\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_empty_media_full_response_and_range",
+      "status": "error",
+      "seconds": 0.003446,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-7l7mrrst'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-7l7mrrst'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_multirange_and_unknown_unit_are_ignored_regression",
+      "status": "error",
+      "seconds": 0.002269,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-84vlwwm_\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_multirange_and_unknown_unit_are_ignored_regression",
+      "status": "error",
+      "seconds": 0.002639,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-84vlwwm_'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-84vlwwm_'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_no_root_and_stale_session",
+      "status": "error",
+      "seconds": 0.002161,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0k9j14m1\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_no_root_and_stale_session",
+      "status": "error",
+      "seconds": 0.002606,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0k9j14m1'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-0k9j14m1'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_range_full_single_open_suffix_and_clamp",
+      "status": "error",
+      "seconds": 0.002833,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-b2o9wgyg\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_range_full_single_open_suffix_and_clamp",
+      "status": "error",
+      "seconds": 0.003282,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-b2o9wgyg'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-b2o9wgyg'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_range_invalid_and_unsatisfiable",
+      "status": "error",
+      "seconds": 0.002764,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-vixqo3bf\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_range_invalid_and_unsatisfiable",
+      "status": "error",
+      "seconds": 0.003174,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-vixqo3bf'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-vixqo3bf'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_replace_rotates_session_retains_token",
+      "status": "error",
+      "seconds": 0.002342,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-bzha5vsd\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_replace_rotates_session_retains_token",
+      "status": "error",
+      "seconds": 0.002763,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-bzha5vsd'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-bzha5vsd'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_server_rejects_nonloopback_bind_before_socket_creation",
+      "status": "error",
+      "seconds": 0.002542,
+      "details": "Traceback (most recent call last):\n  File \"${PROJECT_ROOT}\\tests\\test_backend.py\", line 29, in setUp\n    self.root.mkdir()\n  File \"${PYTHON_ENV}\\lib\\pathlib.py\", line 1175, in mkdir\n    self._accessor.mkdir(self, mode)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-9_3sq63_\\\\library'\n"
+    },
+    {
+      "id": "test_backend.StateAndRangeTests.test_server_rejects_nonloopback_bind_before_socket_creation",
+      "status": "error",
+      "seconds": 0.002998,
+      "details": "Traceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 622, in _rmtree_unsafe\n    os.rmdir(path)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-9_3sq63_'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 882, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 864, in _rmtree\n    _shutil.rmtree(name, onerror=onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 750, in rmtree\n    return _rmtree_unsafe(path, onerror)\n  File \"${PYTHON_ENV}\\lib\\shutil.py\", line 624, in _rmtree_unsafe\n    onerror(os.rmdir, path, sys.exc_info())\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 849, in onerror\n    _resetperms(path)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 286, in _resetperms\n    _dont_follow_symlinks(_os.chmod, path, 0o700)\n  File \"${PYTHON_ENV}\\lib\\tempfile.py\", line 277, in _dont_follow_symlinks\n    func(path, *args)\nPermissionError: [WinError 5] 拒绝访问。: '${USERPROFILE}\\\\AppData\\\\Local\\\\Packages\\\\sandbox.{4cb1c0fa-789a-433e-8dd2-858e10b87bd7}\\\\AC\\\\Temp\\\\frame-test-9_3sq63_'\n"
+    }
+  ]
+}
